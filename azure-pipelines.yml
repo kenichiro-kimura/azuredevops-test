@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: PackerBuild@1
+  displayName: 'Build immutable image'
+  inputs:
+    ConnectedServiceName: 'devops'
+    isManagedImage: false
+    location: japaneast
+    storageAccountName: cdtestpipeline
+    azureResourceGroup: 'cd_test'
+    baseImage: 'OpenLogic:CentOS:7.2:linux'
+    deployScriptPath: deploy.sh
