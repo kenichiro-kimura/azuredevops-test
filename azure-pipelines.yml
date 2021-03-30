@@ -16,8 +16,8 @@ steps:
     ConnectedServiceName: 'devops'
     isManagedImage: false
     location: japaneast
-    storageAccountName: 'stkkimura20210123'
-    azureResourceGroup: 'rg-azadmin-network-us'
+    storageAccountName: 'stkkimuradevopstest'
+    azureResourceGroup: 'devops-test'
     baseImage: 'OpenLogic:CentOS:7.2:linux'
     deployScriptPath: deploy.sh
-    imageUri: 'https://stkkimura20210123.blob.core.windows.net/vmimagetest'
+    imageUri: 'https://stkkimuradevopstest.blob.core.windows.net/vmmagetest'
