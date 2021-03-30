@@ -17,6 +17,7 @@ steps:
     isManagedImage: false
     location: japaneast
     storageAccountName: cdtestpipeline
-    azureResourceGroup: 'cd_test'
+    azureResourceGroup: 'rg-azadmin-network-us'
     baseImage: 'OpenLogic:CentOS:7.2:linux'
     deployScriptPath: deploy.sh
+    imageUri: 'https://stkkimura20210123.blob.core.windows.net/vmimagetest'
