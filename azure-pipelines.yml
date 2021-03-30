@@ -16,7 +16,7 @@ steps:
     ConnectedServiceName: 'devops'
     isManagedImage: false
     location: japaneast
-    storageAccountName: cdtestpipeline
+    storageAccountName: 'stkkimura20210123'
     azureResourceGroup: 'rg-azadmin-network-us'
     baseImage: 'OpenLogic:CentOS:7.2:linux'
     deployScriptPath: deploy.sh
