@@ -18,6 +18,6 @@ steps:
     location: japaneast
     storageAccountName: 'stkkimuradevopstest'
     azureResourceGroup: 'devops-test'
-    baseImage: 'OpenLogic:CentOS:7.2:linux'
+    baseImage: 'Canonical:UbuntuServer:18.04-LTS:linux'
     deployScriptPath: deploy.sh
     imageUri: 'https://stkkimuradevopstest.blob.core.windows.net/vmmagetest'
