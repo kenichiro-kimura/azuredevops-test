@@ -24,3 +24,17 @@ steps:
     baseImageSource: customVhd
     deployScriptPath: deploy.sh
     imageUri: 'https://stkkimuradevopstest.blob.core.windows.net/vmmagetest'
+
+- task: PackerBuild@2
+  displayName: 'Build immutable image'
+  inputs:
+    ConnectedServiceName: 'devops'
+    isManagedImage: false
+    location: japaneast
+    storageAccountName: 'stkkimuradevopstest'
+    azureResourceGroup: 'devops-test'
+    #baseImage: 'Canonical:UbuntuServer:18.04-LTS:linux'
+    customImageOSType: linux
+    customImageUrl: https://stkkimuradevopstest.blob.core.windows.net/system/Microsoft.Compute/Images/vsts-buildimagetask/20210330.7-osDisk.2bedebb8-0560-4c21-8241-cee44d08eeb3.vhd
+    baseImageSource: customVhd
+    deployScriptPath: deploy.sh
