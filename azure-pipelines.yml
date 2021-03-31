@@ -25,8 +25,8 @@ steps:
     deployScriptPath: deploy.sh
     imageUri: 'https://stkkimuradevopstest.blob.core.windows.net/vmmagetest'
 
-- task: PackerBuild@2
-  displayName: 'Build immutable image'
+- task: PackerBuild@1
+  displayName: 'Build immutable image2'
   inputs:
     ConnectedServiceName: 'devops'
     isManagedImage: false
