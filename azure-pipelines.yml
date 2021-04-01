@@ -29,7 +29,7 @@ steps:
   displayName: 'Build immutable image2'
   inputs:
     ConnectedServiceName: 'devops'
-    isManagedImage: true
+    isManagedImage: false
     location: japaneast
     storageAccountName: 'stkkimuradevopstest'
     azureResourceGroup: 'devops-test'
@@ -38,3 +38,4 @@ steps:
     customImageUrl: https://stkkimuradevopstest.blob.core.windows.net/system/Microsoft.Compute/Images/vsts-buildimagetask/20210330.7-osDisk.2bedebb8-0560-4c21-8241-cee44d08eeb3.vhd
     baseImageSource: customVhd
     deployScriptPath: deploy.sh
+    managedImageName: test
