@@ -29,7 +29,7 @@ steps:
   displayName: 'Build immutable image2'
   inputs:
     ConnectedServiceName: 'devops'
-    isManagedImage: false
+    isManagedImage: true
     location: japaneast
     storageAccountName: 'stkkimuradevopstest'
     azureResourceGroup: 'devops-test'
